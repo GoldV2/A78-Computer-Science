@@ -1,0 +1,6 @@
+candy bar, coffee, ice cream, milk, egg, chip, paper towel, mustard
+egg, cookie, ice cream, milk, whipped cream, paper towel, mustard, bread
+diaper, ice cream, mustard, chip, cream, candy bar, paper towel
+paper, battery, pencil, candy bar, milk, ice cream, chip, cookie
+formula, banana, diaper, milk, cookie, whipped cream, paper towel
+chip, coffee, cookie, egg, milk, formula, mustard
