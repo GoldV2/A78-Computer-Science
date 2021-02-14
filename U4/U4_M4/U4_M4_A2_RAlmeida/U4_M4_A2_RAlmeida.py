@@ -4,12 +4,12 @@
 
 from textwrap import dedent
 
-def step(n, name = ''):
+def task(n, name = ''):
     width = len(name) + 8
 
     s = f"""
          +{'-'*width}+
-         |{f'Step {n}':^{width}}|"""
+         |{f'Task {n}':^{width}}|"""
 
     if name:
         s += f"""

@@ -1,6 +1,6 @@
 # File Name: U4_M4_A1_RAlmeida.py
-# Purpose: 
-# Edited - Revised: 
+# Purpose: Read Files
+# Edited - Revised: 02/14/21
 
 from textwrap import dedent
 
