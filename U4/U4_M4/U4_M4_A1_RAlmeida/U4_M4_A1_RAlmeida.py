@@ -28,6 +28,7 @@ task(1, 'Cities')
 
 # opening file
 cities_file = open('D:\\ralmeida\\Documents\\Classes\\A7-8 Computer Science Principles\\A78-Computer-Science-Classwork\\U4\\U4_M4\\U4_M4_A1_RAlmeida\\cities.txt', 'r')
+print(cities_file)
 
 task(2)
 
