@@ -50,7 +50,7 @@ for line in cities_lines:
      if line >= 'D':
           # print line
           print(line)
-
+ 
 # closing the file
 cities_file.close()
 try:
