@@ -47,7 +47,7 @@ task(3, '.close()')
 # looping through every line in cities_lines
 for line in cities_lines:
      # if line is greater than D
-     if line > 'D':
+     if line >= 'D':
           # print line
           print(line)
 
