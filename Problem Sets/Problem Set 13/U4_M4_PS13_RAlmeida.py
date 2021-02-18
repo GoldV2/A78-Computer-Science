@@ -74,11 +74,12 @@ pi.seek(seed)
 # digit will always be the same in this code
 # destroying the purpose of guessing
 digit = pi.read(1)
+guess = input('Enter a single digit guess or "q" to quit\n\n>>> ')
+
 
 correct = 0
 wrong = 0
 while True:
-    guess = input('Enter a single digit guess or "q" to quit\n\n>>> ')
     if not guess.isdigit():
         break
 
@@ -97,6 +98,10 @@ while True:
     elif guess != digit:
         print('Wrong!')
         wrong += 1
+
+    # this code generates an infinite loop.
+    # I am using this break to stop it
+    break
 
 print(f'Correct Guesses: {correct}\nWrong Guesses: {wrong}')
 
