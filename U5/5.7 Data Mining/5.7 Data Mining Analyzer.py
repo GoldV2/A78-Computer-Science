@@ -3,13 +3,16 @@ import os
 
 # define the products
 # this can be changed to an input so that the user can enter any product
-products = tuple('banana, battery, bread, candy bar, chip, coffee, cookie, diaper, egg, formula, ice cream, milk, mustard, paper, paper towel, pencil, whipped cream'.split(', '))
+products = 'banana, battery, bread, candy bar, chip, coffee, cookie, diaper, egg, formula, ice cream, milk, mustard, paper, paper towel, pencil, whipped cream'.split(', ')
 
 ###
-# returns: 2D list
+# returns
 ###
-# each item in the first list represents the receipts
+# receipts:2D list
+###
+# each item in the first list represents the individual receipts
 # each item in a receipt is a string of the name of the item bought
+# checks if any item the user inputs does not exist
 def take_input():
     receipts = []
     while True:
@@ -17,6 +20,13 @@ def take_input():
         if l == ['']:
             break
     
+        l_set = set(l)
+        inter = l_set&set(products)
+        if l_set != inter:
+            print(f'The items: {", ".join([item for item in list(l_set)+list(inter) if item not in inter])}, are not valid. The program will be terminated')
+            input('Press enter to terminate the program')
+            exit()
+
         receipts.append(l)
 
     return receipts
@@ -121,7 +131,7 @@ input('Press enter to terminate the program')
 # example input
 # candy bar, coffee, ice cream, milk, egg, chip, paper towel, mustard
 # egg, cookie, ice cream, milk, whipped cream, paper towel, mustard, bread
-# diaper, ice cream, mustard, chip, cream, candy bar, paper towel
+# diaper, ice cream, mustard, chip, whipped cream, candy bar, paper towel
 # paper, battery, pencil, candy bar, milk, ice cream, chip, cookie
 # formula, banana, diaper, milk, cookie, whipped cream, paper towel
 # chip, coffee, egg, milk, cookie, formula, mustard
