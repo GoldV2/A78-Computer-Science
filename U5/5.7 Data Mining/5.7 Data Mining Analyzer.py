@@ -34,7 +34,7 @@ def take_input():
 ###
 # returns
 ###
-# freq: dictionary
+# freq:dictionary
 ###
 # returns a dictionary that has tuples of two strings as keys and integers as values
 # the strings in the tuples are the name of the items
